@@ -20,6 +20,14 @@ html{
     scroll-behavior: smooth;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* Контейнер для центровки элементов */
 .container {
     width: 100%;
