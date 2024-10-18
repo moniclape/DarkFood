@@ -76,7 +76,7 @@ nav ul ,li a {
 }
 
 nav ul li a:hover{
-    color: #000000;
+    color: #ff6347;
 }
 .deliver, li{
     list-style: none;
