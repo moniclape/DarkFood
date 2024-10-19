@@ -12,20 +12,13 @@ body {
     font-weight: 500;
     font-style: normal;
     color: #333;
-    b: gray;
+    transition: 0.5s;
+    /* b: gray; */
 
 }
 
 html{
     scroll-behavior: smooth;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 /* Контейнер для центровки элементов */
@@ -37,11 +30,12 @@ a {
 }
 
 /* Хедер */
-header {
+#header {
     background-color: #fff;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+    height: auto;
+    max-height: auto;
     /* background-image: url(..//imgs//photo_2024-10-04_11-07-08.jpg); */
     
 }
@@ -63,7 +57,7 @@ nav ul {
     display: flex;
     gap: 20px;
     background-color:   whitesmoke;
-    
+    transition: 0.5s;
     
 }
 
@@ -75,7 +69,7 @@ nav ul ,li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover{
+nav ul ,li a:hover {
     color: #ff6347;
 }
 .deliver, li{
@@ -85,19 +79,29 @@ nav ul li a:hover{
      
 }
 
+.icon-menu, .icon-close{
+    display: none;
+    position: absolute;
+    right: 60px;
+    top: 34px;
+}
+
 /* Бургер-меню для мобильных устройств */
-.burger-menu {
+/* .burger-menu {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
 }
 
 .burger-menu span {
     width: 25px;
     height: 2px;
-    background-color: #333;
-}
+} */
 
 .hero {
     background: url() no-repeat center center/cover;
@@ -253,10 +257,34 @@ footer {
 
 /* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
-    nav ul {
+    .container1{
+        justify-content: left;
+        margin-left: 50px;
+    }
+    .icon-menu{
+        display: flex;
+    }
+    nav.show ul{
+        visibility: visible;
+
+        align-items: center;
+    }
+    .show .icon-menu{
         display: none;
+    }
+    .show .icon-close{
+        display: block;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    nav ul {
+        visibility: hidden;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
         background-color: white;
         position: absolute;
         top: 80px;
@@ -270,16 +298,8 @@ footer {
         display: flex;
     }
 
-    .burger-menu {
-        display: flex;
-    }
-
-    .product-grid {
-        flex-direction: column;
-    }
-
     .product-card {
         flex: 1 1 100%;
-    
+        flex-direction: column;
     }
 }
