@@ -9,34 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    
-    <link rel="stylesheet" href="new.css">
-    <link rel="stylesheet" href="scss.scss">
+    <link rel="stylesheet" href="..//styles/new.css">
+    <link rel="stylesheet" href="../scss/scss.scss">
     
 </head>
 <body>
 
     <!-- Хедер -->
-    <header>
-        <div class="container1">
+    <header id="header">
+        <nav class="container1">
             <div class="logo">
-                <img src="IMG_2168.PNG" alt="DarkFood">
+                <img src="..//imgs/IMG_2168.PNG" alt="DarkFood">
             </div>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#menu">Меню</a></li>
-                    <li><a href="index.html">Акции</a></li>
-                    <li><a href="contact.html">О нас</a></li>
-                    <li class="deliver"><a href="deliver.html">Доставка</a></li>
-                </ul>
-                
-            </nav>
-          
             
-            <div class="burger-menu" id="burger-menu">
-               
+            <div class="menu">
+               <ul class="grid">
+                    <li><a class="title" href="./index.html">Главная</a></li>
+                    <li><a class="title" href="#menu">Меню</a></li>
+                    <li><a class="title" href="./index.html">Акции</a></li>
+                    <li><a class="title" href="..//html/contact.html">О нас</a></li>
+                    <li class="deliver"><a class="title" href="..//deliver.html">Доставка</a></li>
+                </ul>
             </div>
-        </div>
+            <div class="toggle icon-menu">Menu</div>
+            <div class="toggle icon-close">Close</div>
+        </nav>
     </header>
 
     <!-- Баннер -->
@@ -48,7 +45,7 @@
         </div> 
     
     </section> -->
-    <section class="section-slider container" >
+    <!-- <section class="section-slider container" >
         <div id="carouselExampleIndicators" class="carousel slide section-slider__slider" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -57,13 +54,13 @@
             </ol>
             <div class="carousel-inner" >
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="Баннер-бонусы.jpg" alt="First slide">
+                    <img class="d-block w-100" src="../imgs/Баннер-бонусы.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="Баннер-ДР-2023.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="..//imgs/Баннер-ДР-2023.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="Повторный-заказ-баннер-сайт.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="..//imgs/Повторный-заказ-баннер-сайт.jpg" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -75,7 +72,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </section>
+    </section> -->
 
     <!-- Карточки товаров -->
     <section class="products">
@@ -83,10 +80,10 @@
             <h1 id="menu" style="font-weight: 700; font-size: 35px;"> Меню</h1>
             <div class="product-grid">
                 <div class="product-card">
-                    <img src="11EEC6DEEF2A8314A75E734E42048301.avif" alt="Пицца">
+                    <img src="..//imgs/11EEC6DEEF2A8314A75E734E42048301.avif" alt="Пицца">
                     <h3>Эль Пасо</h3>
                     <p>Соус сладкий, моцарелла, колбаса, мясо,халапенью</p>
-                    <button id="popup-btn btn">Подробнее</button>
+                    <a href="#" class="btn">Подробнее</a>
                 </div>
                 <!-- <div id="myModal" class="modal">
                     <div class="modal-content">
@@ -96,7 +93,7 @@
                     </div>
                   </div> -->
                 <div class="product-card">
-                    <img src="11EF02382F16D01987A5126129EE47AC.avif" alt="Паста">
+                    <img src="..//imgs/11EF02382F16D01987A5126129EE47AC.avif" alt="Паста">
                     <h3>Детская</h3>
                     <p>Соус сладкий, картофель фри, сосиска детская, кукуруза, кетчуп.</p>
                     <a href="#" class="btn">Подробнее</a>
@@ -109,7 +106,7 @@
                     </div>
                   </div> -->
                 <div class="product-card">
-                    <img src="11EF02382F16D01987A5126129EE47AC.avif" alt="Пицца">
+                    <img src="..//imgs/11EF02382F16D01987A5126129EE47AC.avif" alt="Пицца">
                     <h3>Мясная</h3>
                     <p>Соус сладкий, мясо моцарелла, перец, помидор, барбекю</p>
                     <a href="#" class="btn">Подробнее</a>
@@ -122,55 +119,55 @@
                     </div>
                   </div> -->
                 <div class="product-card">
-                    <img src="11EEC6DEEF2A8314A75E734E42048301.avif " alt="Паста">
+                    <img src="../imgs/11EEC6DEEF2A8314A75E734E42048301.avif " alt="Паста">
                     <h3>Куриная</h3>
                     <p>Соус сладкий, курица , моцарелла, перец, помидор, барбекю</p>
                     <a href="#" class="btn">Подробнее</a>
                 </div>
                 <div class="product-card">
-                    <img src="11EF02382F16D01987A5126129EE47AC.avif " alt="Пицца">
+                    <img src="..//imgs/11EF02382F16D01987A5126129EE47AC.avif " alt="Пицца">
                     <h3>Чили</h3>
                     <p>Соус остый, мясо моцарелла, колбаса, шампиньоны</p>
                     <a href="#" class="btn">Подробнее</a>
                 </div>
                 <div class="product-card">
-                    <img src="11EF02382F16D01987A5126129EE47AC.avif " alt="Паста">
+                    <img src="..//imgs/11EF02382F16D01987A5126129EE47AC.avif " alt="Паста">
                     <h3>Пеперони</h3>
                     <p>Соус сладкий, моцарелла, колбаса шампиньоны</p>
                     <a href="#" class="btn">Подробнее</a>
                 </div>
                 <div class="product-card">
-                    <img src="11EE7D60177073018C580C07B2F34917.avif " alt="Пицца">
+                    <img src="..//imgs/11EE7D60177073018C580C07B2F34917.avif " alt="Пицца">
                     <h3>Маргарита</h3>
                     <p>Соус сладкий, моцарелла, помидор, оригно</p>
                     <a href="#" class="btn">Подробнее</a>
                 </div>
                 <div class="product-card">
-                    <img src="11EE7D60177073018C580C07B2F34917.avif" alt="Паста">
+                    <img src="..//imgs//11EE7D60177073018C580C07B2F34917.avif" alt="Паста">
                     <h3>Паста Карбонара</h3>
                     <p>Изысканная паста с беконом и сыром пармезан.</p>
                     <a href="#" class="btn">Подробнее</a>
                 </div>
                 <div class="product-card">
-                    <img src="супер мясная.jpg " alt="Пицца">
+                    <img src="../imgs/супер мясная.jpg " alt="Пицца">
                     <h3>Пицца Маргарита</h3>
                     <p>Итальянская классика с натуральными томатами и базиликом.</p>
                     <a href="#" class="btn">Подробнее</a>
                 </div>
                 <div class="product-card">
-                    <img src="супер мясная.jpg " alt="Паста">
+                    <img src="../imgs/супер мясная.jpg " alt="Паста">
                     <h3>Паста Карбонара</h3>
                     <p>Изысканная паста с беконом и сыром пармезан.</p>
                     <a href="#" class="btn">Подробнее</a>
                 </div>
                 <div class="product-card">
-                    <img src="супер мясная.jpg " alt="Пицца">
+                    <img src="../imgs/супер мясная.jpg " alt="Пицца">
                     <h3>Пицца Маргарита</h3>
                     <p>Итальянская классика с натуральными томатами и базиликом.</p>
                     <a href="#" class="btn">Подробнее</a>
                 </div>
                 <div class="product-card">
-                    <img src="супер мясная.jpg " alt="Пицца">
+                    <img src="../imgs/супер мясная.jpg " alt="Пицца">
                     <h3>Пицца Маргарита</h3>
                     <p>Итальянская классика с натуральными томатами и базиликом.</p>
                     <a href="#" class="btn">Подробнее</a>
@@ -219,7 +216,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-<script src="header.js"></script>
-  
 </body>
+<script src="../main.js"></script>
 </html>
