@@ -228,4 +228,22 @@
     crossorigin="anonymous"></script>
 </body>
 <script src="main.js"></script>
+<script>
+    fetch('http://127.0.0.1:8000/api/pizzas/')
+    .then(response => response.json())
+    .then(data => {
+        const container = document.querySelector('.product-grid');
+        data.forEach(product => {
+        const card = document.createElement('div');
+        card.classList.add('product-card');
+        card.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>${product.description}</p>
+            <a href="https://strannosti.github.io/form/" class="btn">Заказать</a>
+        `;
+        container.appendChild(card);
+        });
+    });
+</script>
 </html>
